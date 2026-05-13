@@ -16,10 +16,10 @@ body{
 header{
   height:100vh;
 
-  /* ☕ BOOK CAFÉ BACKGROUND (UPDATED) */
+  /* ☕📚 REAL BOOK CAFÉ BACKGROUND (COFFEE + BOOKS VIBE) */
   background:
-  linear-gradient(rgba(25,18,12,0.7), rgba(25,18,12,0.7)),
-  url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1200&q=80');
+  linear-gradient(rgba(30,20,15,0.65), rgba(30,20,15,0.65)),
+  url('https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&fit=crop&w=1200&q=80');
 
   background-size:cover;
   background-position:center;
@@ -55,8 +55,9 @@ header{
   letter-spacing:1px;
 }
 
+/* SUBTEXT */
 .hero p{
-  color:#e2d6c5;
+  color:#e7d8c7;
   margin:10px 0 20px;
   font-size:18px;
 }
@@ -94,7 +95,7 @@ h2{
 .about{
   max-width:650px;
   margin:auto;
-  color:#d6c7b2;
+  color:#d8c7b2;
   line-height:1.8;
   font-size:16px;
 }
