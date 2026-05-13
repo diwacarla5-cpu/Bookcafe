@@ -8,18 +8,18 @@
 body{
   background:#0b1220;
   color:white;
+  scroll-behavior:smooth;
 }
 
 /* HERO */
 header{
   height:100vh;
   background:
-  linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-  url('https://images.unsplash.com/photo-1455885666463-5f34b5f6e1a6?auto=format&fit=crop&w=1200&q=80');
+  linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+  url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1200&q=80');
 
   background-size:cover;
   background-position:center;
-
   display:flex;
   justify-content:center;
   align-items:center;
@@ -39,9 +39,11 @@ header{
   border-radius:50%;
   border:3px solid #a78bfa;
   margin-bottom:15px;
-  box-shadow:0 0 20px rgba(167,139,250,0.4);
+  box-shadow:0 0 20px rgba(167,139,250,0.5);
+  background:white;
 }
 
+/* TEXT */
 .hero h1{
   font-size:60px;
 }
@@ -60,6 +62,7 @@ header{
   text-decoration:none;
   border-radius:25px;
   transition:0.3s;
+  display:inline-block;
 }
 
 .btn:hover{
@@ -85,7 +88,7 @@ h2{
   line-height:1.8;
 }
 
-/* MENU */
+/* MENU GRID */
 .menu{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
@@ -133,15 +136,10 @@ h2{
 }
 
 /* CONTACT */
-.contact{
-  padding:70px 20px;
-}
-
 .contact-box{
-  margin-top:30px;
+  margin:auto;
   background:#111827;
   max-width:500px;
-  margin:auto;
   padding:25px;
   border-radius:15px;
   line-height:2;
@@ -160,4 +158,15 @@ footer{
 @keyframes fadeIn{
   from{opacity:0; transform:translateY(20px);}
   to{opacity:1; transform:translateY(0);}
+}
+
+/* RESPONSIVE */
+@media (max-width:768px){
+  .hero h1{
+    font-size:38px;
+  }
+
+  h2{
+    font-size:28px;
+  }
 }
