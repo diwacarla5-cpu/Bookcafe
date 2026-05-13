@@ -1,0 +1,163 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI', sans-serif;
+}
+
+body{
+  background:#0b1220;
+  color:white;
+}
+
+/* HERO */
+header{
+  height:100vh;
+  background:
+  linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+  url('https://images.unsplash.com/photo-1455885666463-5f34b5f6e1a6?auto=format&fit=crop&w=1200&q=80');
+
+  background-size:cover;
+  background-position:center;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:20px;
+}
+
+.hero{
+  animation:fadeIn 1.5s ease;
+}
+
+/* LOGO */
+.logo{
+  width:110px;
+  height:110px;
+  object-fit:cover;
+  border-radius:50%;
+  border:3px solid #a78bfa;
+  margin-bottom:15px;
+  box-shadow:0 0 20px rgba(167,139,250,0.4);
+}
+
+.hero h1{
+  font-size:60px;
+}
+
+.hero p{
+  color:#cbd5e1;
+  margin:10px 0 20px;
+  font-size:18px;
+}
+
+/* BUTTON */
+.btn{
+  padding:12px 28px;
+  background:#a78bfa;
+  color:white;
+  text-decoration:none;
+  border-radius:25px;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:#7c3aed;
+  transform:scale(1.05);
+}
+
+/* SECTIONS */
+section{
+  padding:70px 20px;
+  text-align:center;
+}
+
+h2{
+  font-size:38px;
+  margin-bottom:20px;
+}
+
+.about{
+  max-width:600px;
+  margin:auto;
+  color:#cbd5e1;
+  line-height:1.8;
+}
+
+/* MENU */
+.menu{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:25px;
+  margin-top:40px;
+}
+
+/* CARD */
+.card{
+  background:#111827;
+  border-radius:18px;
+  overflow:hidden;
+  box-shadow:0 10px 25px rgba(0,0,0,0.4);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+}
+
+.card img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+}
+
+.card h3{
+  margin:12px 0 5px;
+  color:#c4b5fd;
+}
+
+.card p{
+  font-size:14px;
+  color:#cbd5e1;
+  padding:0 10px;
+}
+
+.price{
+  display:inline-block;
+  margin:15px 0 20px;
+  padding:6px 14px;
+  background:#a78bfa;
+  border-radius:20px;
+  font-size:14px;
+}
+
+/* CONTACT */
+.contact{
+  padding:70px 20px;
+}
+
+.contact-box{
+  margin-top:30px;
+  background:#111827;
+  max-width:500px;
+  margin:auto;
+  padding:25px;
+  border-radius:15px;
+  line-height:2;
+  color:#cbd5e1;
+}
+
+/* FOOTER */
+footer{
+  padding:20px;
+  text-align:center;
+  background:#020617;
+  color:#94a3b8;
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+  from{opacity:0; transform:translateY(20px);}
+  to{opacity:1; transform:translateY(0);}
+}
